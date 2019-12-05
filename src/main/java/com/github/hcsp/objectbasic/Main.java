@@ -1,7 +1,5 @@
 package com.github.hcsp.objectbasic;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         // 现在运行这个方法输出的数字是乱序的
