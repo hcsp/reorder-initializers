@@ -1,7 +1,7 @@
 package com.github.hcsp.objectbasic;
 
 public class Cat {
-    public static int count = initStaticCount();
+    //public static int count = initStaticCount();
 
     static {
         System.out.println(1);
