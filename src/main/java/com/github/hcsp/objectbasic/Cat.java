@@ -1,11 +1,20 @@
 package com.github.hcsp.objectbasic;
 
 public class Cat {
-    int age = initAge();
-    String name;
+    public static int count = initStaticCount();
+
     static {
         System.out.println(1);
+    }
+
+    int age = initAge();
+    String name;
+
+    {
         System.out.println(2);
+    }
+
+    {
         System.out.println(3);
     }
 
@@ -13,22 +22,20 @@ public class Cat {
         System.out.println(4);
         return 0;
     }
-    public int count = initStaticCount();
+
     public static int initStaticCount() {
         System.out.println(5);
         return 0;
     }
 
     public Cat(String name) {
-        age = 0;
-        this.name = name;
+        this(0, name);
         System.out.println(6);
-        System.out.println(7);
     }
 
     public Cat(int age, String name) {
-        this(name);
         this.age = age;
-
+        this.name = name;
+        System.out.println(7);
     }
 }
